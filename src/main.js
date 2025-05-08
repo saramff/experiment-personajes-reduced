@@ -83,8 +83,8 @@ shuffle(peopleDataArray);
 /**************************************************************************************/
 
 const FACES_URL =
-  "https://raw.githubusercontent.com/saramff/people-attributes-images/refs/heads/master";
-const IMAGES_PER_GENDER = 24;
+  "https://raw.githubusercontent.com/saramff/face-recognition-reduced/refs/heads/master";
+const IMAGES_PER_GENDER = 12;
 
 // Create pictures arrays for men and women faces
 const menFaces = Array.from(
@@ -462,7 +462,7 @@ let tetris = {
   `,
   post_trial_gap: 500,
   choices: "NO_KEYS", // Prevent key press
-  trial_duration: 1200000,
+  trial_duration: 100 //1200000,
 };
 timeline.push(tetris);
 
@@ -531,7 +531,7 @@ const supabase = createClient(
   import.meta.env.VITE_SUPABASE_API_KEY
 );
 
-const TABLE_NAME = "";
+const TABLE_NAME = "experimento-personajes-reduced";
 
 async function saveData(data) {
   console.log(data);
